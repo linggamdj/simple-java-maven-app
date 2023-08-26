@@ -1,5 +1,5 @@
 node {
-    docker.image('maven:3.9.4-eclipse-temurin-11').inside {
+    docker.image('maven:3.9.2-eclipse-temurin-11').inside {
         stage('Build') {
             sh 'mvn -B -DskipTests clean package'
         }
